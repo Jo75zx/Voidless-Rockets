@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en" class="sm:scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voidless Rockets</title>
+    <meta name="description" content="Voidless Rockets - The best rockets in the universe.">
+    <meta name="keywords" content="rockets, space, technology">
+    <meta property="og:title" content="Voidless Rockets">
+    <meta property="og:description" content="Voidless Rockets - The best rockets in the universe.">
+    <meta property="og:image" content="imgs/rocket-8835386_1920.png">
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<!--
+
+    body bg -- minimal stary 
+    animnated rocket
+    hover effect on nav links
+    testimonial section could use animations
+    
+
+-->
+
+<body class="min-h-screen dark:text-white bg-hero-pattern bg-cover bg-fixed bg-no-repeat backdrop-brightness-[10%]">
+    <header class="bg-cyan-600 text-white sticky top-0 z-10">
+        <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-3xl font-medium">
+                <a href="#hero">
+                    <img src="imgs/rocket-8835386_1920.png" alt="Voidless Rockets Logo" class="inline-block h-14 ml-2"
+                        loading="lazy" />
+                    Voidless Rockets
+                </a>
+            </h1>
+            <div>
+                <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer relative w-8 h-8">
+
+                    <div
+                        class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all 
+                    after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all">
+                    </div>
+
+                </button>
+                <nav class="hidden md:block space-x-8 text-xl font-mono" aria-label="main">
+                    <a href="#rockets" class="hover:opacity-90">Rockets</a>
+                    <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+                    <a href="#contact" class="hover:opacity-90">Contact Us</a>
+                </nav>
+            </div>
+        </section>
+        <section id="mobile-menu"
+            class="absolute w-full bg-black top-68 text-4xl flex-col p-8 justify-center origin-top animate-open-menu hidden ">
+
+            <nav class="flex flex-col items-center space-y-8 pb-5">
+                <a href="#hero" class="hover:opacity-90">Home</a>
+                <a href="#rockets" class="hover:opacity-90">Rockets</a>
+                <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+                <a href="#contact" class="hover:opacity-90">Contact Us</a>
+                <a href="#footer" class="hover:opacity-90">Legal</a>
+
+            </nav>
+
+        </section>
+    </header>
+    <main class="max-w-4xl mx-auto">
+        <section id="hero"
+            class="scroll-mt-40 flex flex-col-reverse justify-between sm:flex-row p-6 items-center gap-8 mb-12 widescreen:section-min-height tall:section-min-height ">
+            <article class="sm:w-1/2 ">
+                <h2
+                    class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white">
+                    Welcome to
+                    <span class="text-indigo-700 dark:text-indigo-400">
+                        Voidless Rockets 🚀
+                    </span>
+                    Join us as we push the boundaries of space travel and innovation.
+                </h2>
+                <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400 ">
+                    We are a team of engineers, scientists, and dreamers who are
+                    passionate about space exploration. Our mission is to make space
+                    travel accessible to everyone.
+                </p>
+                <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
+                    Voidless Rockets is a company that is dedicated to making space
+                    travel affordable and accessible to everyone.
+                </p>
+            </article>
+            <img src="imgs/rocket-8835386_1920.png" alt="Rockets" class="w-1/2" loading="lazy" />
+        </section>
+        <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+        <section id="rockets" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tall:section-min-height">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+                Our Rockets
+            </h2>
+            <ul class="list-none mx-auto my-12 flex flex-col justify-center sm:flex-row items-center gap-8">
+                <li
+                    class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 py-6 px-2 rounded-3xl shadow-xl ">
+                    <img src="imgs/r0.png" alt="Rocket1" class="w-1/2" />
+                    <h3 class="text-2xl font-bold text-center m-3 text-slate-900 dark:text-white">
+                        Explorer
+                    </h3>
+                    <p class="hidden sm:block text-xl text-center text-slate-500 dark:text-slate-400">
+                        $
+                    </p>
+                    <p class="text-xl text-center text-slate-700 dark:text-slate-400">
+                        Our first rocket is designed to take you to the edge of space.
+                    </p>
+                </li>
+                <li
+                    class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 py-6 px-2 rounded-3xl shadow-xl ">
+                    <img src="imgs/r1.png" alt="Rocket2" class="w-1/2" />
+                    <h3 class="text-2xl font-bold text-center m-3 text-slate-900 dark:text-white">
+                        Voyager
+                    </h3>
+                    <p class="hidden sm:block text-xl text-center text-slate-500 dark:text-slate-400">
+                        $$
+                    </p>
+                    <p class="text-xl text-center text-slate-700 dark:text-slate-400">
+                        Our second rocket is designed to take you to the moon and back.
+                    </p>
+                </li>
+                <li
+                    class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 py-6 px-2 rounded-3xl shadow-xl ">
+                    <img src="imgs/r2.png" alt="Rocket3" class="w-1/2" />
+                    <h3 class="text-2xl font-bold text-center m-3 text-slate-900 dark:text-white">
+                        Pioneer
+                    </h3>
+                    <p class="hidden sm:block text-xl text-center text-slate-500 dark:text-slate-400">
+                        $$$
+                    </p>
+                    <p class="text-xl text-center text-slate-700 dark:text-slate-400">
+                        Our third rocket is designed to take you to Mars and beyond.
+                    </p>
+                </li>
+                <!-- Missing closing tag added here -->
+            </ul>
+        </section>
+        <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+
+        <section id="testimonials"
+            class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+                Testimonials
+            </h2>
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p
+                        class="text-xl sm:text-2xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                        Acme
+                        has always been there
+                        for me. Their Explorer rocket arrived in a wooden crate as expected.
+                        Life-long customer! A++ shopping experience.
+                    </p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+                    &#8212;Wile E. Coyote, Genius
+                </figcaption>
+            </figure>
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p
+                        class="text-xl sm:text-2xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                        The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explosive Space Modulator on several
+                        occassions. <span class="italic">This makes me very, very angry!</span> Nevertheless, K-9
+                        and I have awarded Acme the
+                        Martian contract for space exploration rockets based on Acme's quality and sturdy designs.</p>
+                    </p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+                    &#8212;Marvin The Martian &amp; K-9
+                </figcaption>
+            </figure>
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p
+                        class="text-xl sm:text-2xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                        I knew I not only wanted &#8212; <span class="italic">I needed</span> &#8212; Acme's Infinity
+                        Rocket for my mission in space. Acme delivered in one day! Nothing says <q class="italic">Take
+                            me
+                            to your leader</q> like Acme's Infinity Rocket! 💯
+                    </p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+                    &#8212;Buzz Lightyear
+                </figcaption>
+            </figure>
+        </section>
+        <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+
+        <section id="contact" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tall:section-min-height">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+                Contact Us
+            </h2>
+            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md border border-solid rounded-3xl">
+
+                <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-2xl ">Got a
+                    technical issue? Want to send feedback about a beta feature? Need details about our Business plan?
+                    Let us know.</p>
+                <form action="#" class="space-y-8">
+                    <div>
+                        <label for="email"
+                            class="block mb-2 text-base font-medium text-gray-900 dark:text-gray-300">Your
+                            email</label>
+                        <input type="email" id="email"
+                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            placeholder="name@example.com" required>
+                    </div>
+                    <div>
+                        <label for="subject"
+                            class="block mb-2 text-base font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                        <input type="text" id="subject"
+                            class="block p-3 w-full text-base text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            placeholder="Let us know how we can help you" required>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message"
+                            class="block mb-2 text-base font-medium text-gray-900 dark:text-gray-400">Your
+                            message</label>
+                        <textarea id="message" rows="6"
+                            class="block p-2.5 w-full text-base text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                            placeholder="Leave a comment..."></textarea>
+                    </div>
+                    <button type="submit"
+                        class="py-3 px-5 text-lg font-medium text-center text-white rounded-lg bg-cyan-700 sm:w-fit hover:bg-cyan-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:bg-cyan-800 dark:hover:bg-cyan-700 dark:focus:ring-cyan-600">Send
+                        message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white py-4" id="footer">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-wrap justify-between">
+                <!-- Company Info -->
+                <div class="w-full sm:w-1/2 lg:w-1/4 mb-6">
+                    <h2 class="text-xl font-semibold mb-4">Voidless Rockets</h2>
+                    <p class="text-gray-400 w-2/3">The best rockets in the universe. Join us on our journey to the
+                        stars.</p>
+                </div>
+                <!-- Quick Links -->
+                <div class="w-full sm:w-1/2 lg:w-1/4 mb-6">
+                    <h2 class="text-xl font-semibold mb-4">Quick Links</h2>
+                    <ul>
+                        <li><a href="#rockets" class="text-gray-400 hover:text-white">Rockets</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white">Testimonials</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div class="w-full sm:w-1/2 lg:w-1/4 mb-6">
+                    <h2 class="text-xl font-semibold mb-4">Contact Us</h2>
+                    <ul>
+                        <li class="text-gray-400">Email: <a class="hover:text-blue-300"
+                                href="mailto:info@voidlessrockets.com">info@voidlessrockets.com </a> </li>
+                        <li class="text-gray-400">Phone: +1 (555) 123-4567</li>
+                        <li class="text-gray-400">Address: 123 Rocket St, Space City, Universe</li>
+                    </ul>
+                </div>
+                <!-- Social Media -->
+                <div class="w-full sm:w-1/2 lg:w-1/4 mb-6">
+                    <h2 class="text-xl font-semibold mb-4">Follow Us</h2>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.46 6c-.77.35-1.6.58-2.46.69a4.28 4.28 0 0 0 1.88-2.37 8.59 8.59 0 0 1-2.72 1.04 4.27 4.27 0 0 0-7.29 3.88A12.13 12.13 0 0 1 1.64 4.15a4.27 4.27 0 0 0 1.32 5.7 4.23 4.23 0 0 1-1.93-.53v.05a4.27 4.27 0 0 0 3.42 4.18 4.27 4.27 0 0 1-1.92.07 4.27 4.27 0 0 0 3.98 2.96A8.56 8.56 0 0 1 0 19.54a12.07 12.07 0 0 0 6.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.37-.01-.56A8.72 8.72 0 0 0 24 4.56a8.59 8.59 0 0 1-2.54.7z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.41 3.6 8.06 8.19 8.96v-6.34h-2.46v-2.62h2.46v-2c0-2.43 1.48-3.76 3.64-3.76 1.04 0 1.93.08 2.19.11v2.54h-1.5c-1.18 0-1.41.56-1.41 1.38v1.81h2.82l-.37 2.62h-2.45v6.34c4.59-.9 8.19-4.55 8.19-8.96 0-5.5-4.46-9.96-9.96-9.96z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.41 3.6 8.06 8.19 8.96v-6.34h-2.46v-2.62h2.46v-2c0-2.43 1.48-3.76 3.64-3.76 1.04 0 1.93.08 2.19.11v2.54h-1.5c-1.18 0-1.41.56-1.41 1.38v1.81h2.82l-.37 2.62h-2.45v6.34c4.59-.9 8.19-4.55 8.19-8.96 0-5.5-4.46-9.96-9.96-9.96z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center text-gray-400 mt-4">
+                &copy; 2023 Voidless Rockets. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js" defer></script>
+</body>
+
+</html>
